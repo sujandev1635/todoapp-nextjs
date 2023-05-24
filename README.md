@@ -12,6 +12,26 @@ yarn dev
 pnpm dev
 ```
 
+
+
+## 1. Create TypeScript project and set up Prisma
+#### install the Prisma CLI as a development dependency in the project:
+<link src="https://www.prisma.io/docs/getting-started/quickstart"/>
+<a src="https://www.prisma.io/docs/getting-started/quickstart">Install Link</a>
+
+npm install prisma --save-dev
+
+## Finally, set up Prisma with the init command of the Prisma CLI:
+
+npx prisma init --datasource-provider sqlite
+
+## 3. Run a migration to create your database tables with Prisma Migrate
+npx prisma migrate dev --name init
+
+
+
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
