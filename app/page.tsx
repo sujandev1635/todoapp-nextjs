@@ -9,7 +9,7 @@ function getTodos(){
 async function toggleTodo(id:string, complete:boolean){
   "use server"
 
-  await prisma.todo.update({where:{id}, date:{complete}})
+  await Prisma.todo.update({where:{id}, date:{complete}})
 }
 
 export default async function Home() {
